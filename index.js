@@ -162,6 +162,7 @@ function precompileTypeScript(result, options) {
         emitDecoratorMetadata: true,
       }
     });
+   console.log(tsResult.outputText);
   } catch (e) {
     e.message = "While compiling " + fileName + ": " + e.message;
     throw e;
